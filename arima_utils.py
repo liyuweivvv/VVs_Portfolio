@@ -52,7 +52,7 @@ def plot_rolling_stats(ts):
     
     
 def plot_acf_pacf(series):
-    fig = plt.figure(figsize=(21,12))
+    fig = plt.figure(figsize=(12,9))
     ax1 = fig.add_subplot(211)
     fig = sm.graphics.tsa.plot_acf(series.squeeze(), lags=40, ax=ax1)
     ax2 = fig.add_subplot(212)
